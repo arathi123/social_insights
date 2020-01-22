@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <title>{% block title %}{% endblock %}</title>
+     <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon">
+     <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body>
+    {%block userInfo %}{% endblock %}
+    <div id="container">
+        {% block content %}{% endblock %}
+    </div>
+    {% block bodyScript %}{% endblock %}
+  </body>
+</html>

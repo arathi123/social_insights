@@ -1,0 +1,37 @@
+{% extends "layout.jinja2" %}
+{% block title %}
+	{% if user %}
+		Sosille Home
+	{% else %}
+		Sosille - Login
+	{% endif %}
+{% endblock %}
+{% block userInfo %}
+	{% if user %}
+	<script type="text/javascript">
+		var userInfo = {{user.get_json() | safe}}
+	</script>
+	{% endif %}
+{% endblock %}
+{% block content %}
+	{% if not user %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.css">
+    <link rel="stylesheet" href="static/css/home.css">
+	<header>
+		<div class='small-12 large-8 column row'>
+		    <div class='row'>
+			    <h1> Sosilee </h1>
+			    <p> Don't even let that silly complaint unattended </p>
+			</div>
+			<div class='small-10 large-4 column'>
+				<a class='large button sites-button' href=/login/fb> Login using Facebook </a>
+			</div>
+		</div>
+	</header>
+	{% endif %}
+{% endblock %}
+{% block bodyScript %}
+	{% if user %}
+        <script src="/static/browser-bundle.js"></script>
+	{% endif %}
+{% endblock %}

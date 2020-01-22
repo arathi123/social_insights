@@ -1,0 +1,16 @@
+$.ajax({
+  dataType: "json",
+  url: 'https://graph.facebook.com/v2.6/search' ,
+  data: {
+  q : 'Airtel India',
+  type: 'page',
+  access_token: userInfo.access_token
+  },
+  success: function(data){
+  	console.log(data);
+  }
+});
+
+
+curl -i -X GET \
+ "https://graph.facebook.com/v2.6/search?q=Airtel%20India&type=page&fields=name%2Ccategory%2Cabout%2Cfan_count&limit=30&access_token=EAAPQpBr7UBQBAJiAKbEiGDp0gOApuBndryHlBpLEIOcjwyubYIhnaaEnpogOczsLb8QJWPmNsi2tiB6GX74XGMFOsoaiFrNZAdXDn6t3IQ5IJCtsC8MHPZAOu9jhj6jk9QsNyO920YmZCSpWmTZBPtIIsPWT74Ve3jrdmJJ90gZDZD"

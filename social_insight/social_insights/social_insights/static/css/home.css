@@ -1,0 +1,262 @@
+body {
+    background-color: #e9ebee;
+    color: #000;
+}
+
+.post-row {
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+header h1 {
+    margin-top: 80px;
+    font-size: 7em;
+}
+
+header p {
+    color: #90949c;
+    margin-left: 10px;
+}
+
+.user-info {
+    text-align: right;
+}
+
+.timestampContent {
+    color: #90949c;
+    font-size: 12px;
+}
+
+.top-bar,
+.top-bar ul {
+    background: #E9EBEE !important;
+}
+
+.is-submenu-item {
+    margin: 5px;
+}
+
+.size-24 {
+    font-size: 24px;
+}
+
+.size-72 {
+    font-size: 72px;
+}
+
+.size-100 {
+    font-size: 100px;
+}
+
+.menu-title {
+    font-weight: bold;
+    font-size: 36px;
+    color: #2199e8;
+}
+
+.step {
+    padding-right: 5px;
+}
+
+/* auto suggest */
+
+.react-autosuggest__container {
+    position: relative;
+}
+
+.react-autosuggest__input {
+    height: 40px;
+    padding: 10px 20px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    border: 1px solid #aaa;
+}
+
+.react-autosuggest__input:focus {
+    outline: none;
+}
+
+.react-autosuggest__container--open .react-autosuggest__input {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.react-autosuggest__suggestions-container {
+    position: absolute;
+    top: 51px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    border: 1px solid #aaa;
+    background-color: #fff;
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    z-index: 2;
+    width:236px;
+}
+
+.react-autosuggest__suggestion {
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.react-autosuggest__suggestion--focused {
+    background-color: #ddd;
+}
+
+.mainCanvas {
+    min-height: 200px;
+}
+
+.infoBox {
+    text-align: left;
+}
+
+.followInfo {
+    text-align: center;
+}
+
+.followInfo p {
+    font-size: 0.9em;
+}
+
+.fi-social-facebook {
+    color: #2199e8;
+}
+
+.subheader {
+    text-transform: initial;
+    font-size: 1.5em;
+}
+
+.pageProfilePicture {
+    text-align: center;
+    margin-top: -450px;
+}
+
+.top-bar .menu-title {
+    cursor: pointer;
+}
+
+.paneTitle {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #2199e8;
+    text-decoration: none;
+    background: #fff;
+    margin: -6px 5px 0 0;
+    padding: 4px 6px 4px 0;
+    text-indent: 6px;
+}
+
+#leftPane {
+    margin-top: 120px;
+    display: block;
+}
+
+#leftPanel li {
+    list-style: none;
+}
+
+.paneItem:hover {
+    background-color: #c5cae9;
+    width: 210px;
+}
+
+.paneItem {
+    cursor: pointer;
+    display: block;
+    color: #757575;
+    text-decoration: none;
+}
+
+.selectedItem {
+    background-color: #CCCCCC;
+    width: 210px;
+}
+
+.see-fb {
+    text-align: right;
+    color: #2199e8;
+    border-bottom: none;
+    cursor: pointer;
+}
+
+.no-js #loader {
+    display: none;
+}
+
+.js #loader {
+    display: block;
+    position: absolute;
+    left: 100px;
+    top: 0;
+}
+
+.se-pre-con {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    width: 10%;
+    height: 5%;
+    z-index: 9999;
+}
+
+.sidebar {
+  background: #E9EBEE;
+  color: black;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  padding: 10px;
+  position: fixed;
+  width: 300px;
+  /* non-critical appearance styles */
+  list-style: none;
+  background: #111;
+}
+
+#sidebar {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  
+  /* non-critical appearance styles */
+  list-style: none;
+  background: #111;
+}
+
+#pageList {
+    list-style-type: none;
+}
+
+.search-box {
+    position:fixed;
+    top:0;
+    left:0;
+    width:99%;
+    height:60px;
+    z-index: 10;
+    background: #ffffff;
+}
+
+.search-box input {
+    color:#333;
+    outline: none !important;
+    transition: all 0.2s linear;
+}
+.search-box input:focus {
+    background: #fff !important;
+    outline: 0;
+    color: #333;
+}
